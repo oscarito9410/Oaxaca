@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">Oaxaca</string>
+    <string name="description_centro_historico">Un hermoso destino colonial, en el centro de Oaxaca podrás admirar impresionantes monumentos históricos unidos a una rica tradición indígena que se mantiene a través de los años. Visita el Zócalo, la Catedral, el Centro Cultural Santo Domingo, el Museo de Arte Contemporáneo, el Museo de Arte Prehispánico Rufino Tamayo y más. O sólo pasea por sus calles admirando las hermosas fachadas y sentándome a disfrutar de un rico platillo típico o mezcal.</string>
+    <string name="title_centro_historico">Centro historico</string>
+    <string name="title_templo_sto_domingo">Templo de santo Domingo</string>
+    <string name="description_sto_domingo">A seis cuadras del zócalo encontrarás este magnífico templo que fue construido con la llegada de los dominicos hacia finales del siglo XVI. Aunque llegó a estar ocupado por el ejército suspendiendo en algún momento su uso religioso, ahora funciona como templo y, asistas o no a una celebración religiosa, su interior es tan bonito como la fachada. El interior alberga diez capillas en una de las cuales podrás admirar 24 pinturas.</string>
+    <string name="title_mertcado_veinte_nov">Mercado 20 De noviembre</string>
+    <string name="description_mecado_veinte_nov">Un mercado con mucha tradición e historia en donde podrás encontrar todo tipo de productos locales a los mejores precios. En lo que antes era el Ex Convento de San Juan de Dios, se terminó de construir el mercado en 1882. Si buscas en lugar para comer, el típico quesillo, mole oaxaqueño o un rico chocolate, a este lugar te debes dirigir. Caminar entre sus pasillos es por sí sólo toda una experiencia que no debes perderte.</string>
+    <string name="title_teatro_macedonio">Teatro Macedonio Alcalá</string>
+    <string name="description_teatro_macedonio">Es considerado uno de los más importantes teatros en México, se completó en 1909 y aunque en un principio funcionó como Teatro-Casino alrededor de 1930 se le dio su nombre actual. La entrada principal consta de tres puertas labradas en cantera verde, en su interior, el vestíbulo es estilo francés tipo Luis XV que destaca por sus relucientes escalinatas en mármol blanco y su cúpula esta sostenida por columnas de mármol rojo. Sin duda, una joya oaxaqueña que no debes perderte al visitar la ciudad.</string>
+    <string name="title_calle_macedonio">Calle Macedonio Alcalá</string>
+    <string name="description_calle_macedonio">Conocida como el andador turístico, esta es la calle principal de la ciudad que conecta el Zócalo con el Templo de Santo Domingo de Guzmán. Puedes recorrerla tranquilamente caminando para conocer sus variadas tiendas boutiques, cafés, restaurantes, museos; y galerías de arte en las que podrás encontrar óleos de Rufino Tamayo y Gustavo Montoya.</string>
+    <string name="title_mercado_benito_juarez">Mercado Benito Juárez.</string>
+    <string name="description_mercado_benito_juarez">Ubicado en lo que era la Plaza del Marqués, aún queda un recordatorio del sitio histórico en una piedra colocada en la parte superior de la entrada sobre la calle Flores Magón que lee MARQVS. Ahora un mercado techado en su interior podrás encontrar todo tipo de productos oaxaqueños como chapulines, mole, quesillo, aguas regionales y más comestibles. Por supuesto también abunda la artesanía con los famosos alebrijes, textiles o productos en piel.</string>
+    <string name="title_museo_arte_prehispanico">Museo De Arte Prehispánico De México Rufino Tamayo</string>
+    <string name="description_museo_arte_prehispanico">El espacio abre sus puertas para conservar y dar a conocer la colección personal del pintor Rufino Tamayo, incluso las cinco salas que conforman al museo están pintadas en las tonalidades escogidas por el mismo pintor y que utilizaba con frecuencia en sus pinturas. Al interior podrás admirar cerca de mil piezas de arte prehispánico de las culturas del Golfo, del Pacífico, del occidente de México y, por supuesto, de zapotecas y mixtecos.</string>
+    <string name="title_activity_place_detail">PlaceDetail</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_monte_alban">Zona Arqueológica De Monte Albán</string>
+    <string name="description_monte_alban">Habitada por la cultura zapoteca y después mixteca, fue la capital indígena más importante de la región de los Valles de Oaxaca. Ubicada sobre un cerro, en la cima encontrarás tres estructuras principales: la Plataforma Sur, el Juego de Pelota Grande y el edificio de los Danzantes. Visitarla durante tu visita a Oaxaca es obligado y a sólo diez kilómetros de la ciudad, el acceso será fácil. Al hacerlo, tu visión de la zona cambiará.</string>
+    <string name="title_san_antonio_arrazola">San Antonio Arrazola</string>
+    <string name="description_san_antonio_arrazola">San Antonio Arrazola se sitúa a 10 km de la carretera rumbo a Zaachila. Conocida comúnmente como \"Arrazola\", famoso por la fabricación de alebrijes: artesanía mexicana creada por Manuel Jiménez. Se elabora con diferentes tipos de papel o de madera tallada y pintada con colores alegres y vibrantes, representados por jaguares, tigres, sirenas, gatos y nahuales</string>
+    <string name="title_san_jeronimo">San Jerónimo Tlacochahuaya</string>
+    <string name="description_san_jeronimo">El templo y ex convento de San Jerónimo Tlacochahuaya datan de mediados del siglo XVI y fueron construidos por los frailes dominicos como un lugar en donde los dominicos pudieran guardar la ley para la santificación del alma. En este espacio es en donde los frailes meditarían, harían penitencia y reflexión. De ahí que su construcción sea más bien sencilla, aunque no por eso deja de ser un hermoso lugar que vale la pena visitarse</string>
+    <string name="description_sta_maria_tule">Lo más impresionante de este pueblo es el ahuehuete que se encuentra en el atrio de la iglesia. Tiene el tronco más grande del mundo con un perímetro aproximado de 42 metros. 500 personas caben bajo su sombra y, aunque se desconoce su edad exacta, se calcula que tiene más de dos mil años. También puedes visitar su Mercado Artesanal o comer en su Mercado de Antojitos tlayudas, memelitas, tomar un rico chocolate o téjate.</string>
+    <string name="title_sta_maria_tule">Santa María Del Tule</string>
+    <string name="title_teotitlan">Teotitlán Del Valle</string>
+    <string name="description_teotitlan_valle">Un encantador pueblo famoso por la producción y belleza de sus productos textiles en lana como tapetes, sarapes, cortinas y vestidos, que son elaborados en grandes telares de madera con los diseños tradicionales en grecas, grifos zapotecos y mixtecos. Además, están pintados con tintes naturales. En tu recorrido podrás visitar la casa de algunos artesanos, darte una vuelta por el templo la Preciosa Sangre de Cristo y el Mercado de Artesanías</string>
+    <string name="title_hierve_agua">Hierve El Agua</string>
+    <string name="description_hierve_agua">Lugar de famosas cascadas petrificadas que se formaron hace miles de años por el escurrimiento de agua con alto contenido en minerales. En la zona también hay vestigios de un sistema de irrigación construido por los zapotecas hace como 2,500 años. No sólo eso, el lugar es ahora un balneario natural en donde podrás disfrutar de aguas termales con albercas y pozas naturales desde donde podrás admirar estas maravillosas cascadas petrificadas.</string>
+    <string name="title_sn_bartolo">San Bartolo Coyotepec</string>
+    <string name="description_sn_bartolo">¿Ubicas el famoso barro negro oaxaqueño? Pues éste es uno de los principales pueblos en elaborar artesanías de tan famoso material. Cuando llegues a él, encontrarás un gran número de tienditas con las impresionantes ollas, jarrones, floreros, platones y muchos productos más de barro negro. En algunas tiendas incluso te dejarán pasar al taller y también hay una Plaza Artesanal. No podrás salir de San Bartolo sin comprar por lo menos una pieza</string>
+    <string name="title_zone_miltla">Zona Arqueológica De Mitla</string>
+    <string name="description_zone_miltla">Después de Monte Albán, fue el principal centro ceremonial de la zona. Su nombre significa ‘lugar de los muertos’ y en su tiempo fue habitado por mixtecos y zapotecos, aunque en diferentes épocas. Esta mezcla de culturas dio como resultado un interesante conjunto arquitectónico que sobresale por su belleza. Visita la Gran Casa de Pezelao, el patio de grecas, las tumbas de los sacerdotes y reyes zapotecos.</string>
+    <string name="title_huatulco">Huatulco</string>
+    <string name="description_huatulco">Con sus nueve bahías y 36 playas, además de un Parque Nacional y una zona Eco Arqueológica, Huatulco se envuelve en una gran conciencia ecológica y de servicio, al contar con programas y certificaciones internacionales como Earthcheck Platinum, Blue Flag para la playa Chahuè, Sitio Ramsar 1321, Reserva de la Biosfera y ostentar el distintivo S de sustentabilidad, entre otros, que lo acreditan como un destino con buenas prácticas sustentables y lo convierten en el principal proyecto de desarrollo integral de preservación del medio ambiente y gestión responsable de recursos de todo México.</string>
+    <string name="title_puerto_angel">Puerto Ángel</string>
+    <string name="description_puerto_angel">Es uno de los lugares idóneos para practicar un sinnúmero de deportes acuáticos. Ubicado a 80 kilómetros de Puerto Escondido, a 50 de las Bahías de Huatulco y a tan solo 15 minutos de Pochutla, este pequeño puerto pesquero y turístico ofrece a los visitantes la calma y tranquilidad de sus playas y la calidez de su gente.</string>
+    <string name="title_puerto_escondido">Puerto Escondido</string>
+    <string name="description_puerto_escondigo">Reconocido, a nivel nacional e internacional, como un destino para surfistas y amantes del turismo de sol y playa, Puerto Escondido es un lugar ideal para disfrutar de la riqueza natural y de sus playas en las que se pueden practicar un sinnúmero de deportes, tanto en el mar, como en sus espacios selváticos, montañas, cascadas y riachuelos que fomentan la recreación al aire libre.</string>
+    <string name="text_ruta_centro">Ruta centro</string>
+    <string name="text_ruta_zonas_arqueologicas">Regiones y Zonas arquelógicas</string>
+    <string name="text_ruta_costas">Ruta costas</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="text_description">Te mostraremos los lugares más icónicos de este bello estado, empezando desde el centro donde puedes comer una deliciosa nieve, tomar chocolate y comer unas ricas Tlayudas. Conocer la historia de la cultura Zapoteca, visitar la única cascada petrificada de América o bien visitar sus hermosas playas.</string>
+</resources>
