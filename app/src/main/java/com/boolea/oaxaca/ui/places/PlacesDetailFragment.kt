@@ -24,10 +24,10 @@ operez@na-at.com.mx
 class PlacesDetailFragment : BaseFragment(), OnMapReadyCallback {
     companion object {
         val TAG = PlacesDetailFragment.toString()
-        val SELECTED_PLACE = "SELECTED_PLACE";
+        val ARG_SELECTED_PLACE = "selected_place"
         fun newInstance(place: Place): PlacesDetailFragment {
             val args = Bundle()
-            args.putSerializable(SELECTED_PLACE, place)
+            args.putSerializable(ARG_SELECTED_PLACE, place)
             val fragment = PlacesDetailFragment()
             fragment.arguments = args
             return fragment
@@ -65,7 +65,7 @@ class PlacesDetailFragment : BaseFragment(), OnMapReadyCallback {
     }
 
     fun getSelectedPlace(): Place {
-        return arguments!!.getSerializable(SELECTED_PLACE) as Place
+        return arguments!!.getSerializable(ARG_SELECTED_PLACE) as Place
     }
 
     override fun onMapReady(googleMap: GoogleMap?) {

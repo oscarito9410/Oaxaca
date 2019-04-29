@@ -34,7 +34,7 @@ class PlaceAdapter(val ctx: Context, val items: ArrayList<Place>) : RecyclerView
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         var place = getItem(position)
         holder.title.text = place.name
-        Glide.with(ctx).load(place.image).into(holder.ivDescription);
+        Glide.with(ctx).load(place.image).into(holder.ivDescription)
         holder.itemView.setOnClickListener { v ->
             run {
                 if (listener != null)
