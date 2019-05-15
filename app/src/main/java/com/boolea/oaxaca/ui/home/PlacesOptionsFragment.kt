@@ -1,4 +1,4 @@
-package com.boolea.oaxaca.ui.places
+package com.boolea.oaxaca.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,8 @@ import com.boolea.oaxaca.R
 import com.boolea.oaxaca.manager.DataManager
 import com.boolea.oaxaca.model.Zone
 import com.boolea.oaxaca.ui.base.BaseFragment
+import com.boolea.oaxaca.ui.places.PlacesDetailFragment
+import com.boolea.oaxaca.ui.places.PlacesFragment
 import kotlinx.android.synthetic.main.fragment_place_options.*
 
 /**

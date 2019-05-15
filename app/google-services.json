@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "429963305419",
+    "firebase_url": "https://pemoendpoints.firebaseio.com",
+    "project_id": "pemoendpoints",
+    "storage_bucket": "pemoendpoints.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429963305419:android:dbf4a61c3fd834f1",
+        "android_client_info": {
+          "package_name": "com.boolea.oaxaca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "429963305419-mnds53ntp08835qto05vlm8vakjnb41r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXTt_rALnKa-k3yo2UcZnF1zyfdBy7oUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "429963305419-mnds53ntp08835qto05vlm8vakjnb41r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429963305419:android:195544dfa417ecee",
+        "android_client_info": {
+          "package_name": "com.oscarito.ipn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "429963305419-mnds53ntp08835qto05vlm8vakjnb41r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXTt_rALnKa-k3yo2UcZnF1zyfdBy7oUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "429963305419-mnds53ntp08835qto05vlm8vakjnb41r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

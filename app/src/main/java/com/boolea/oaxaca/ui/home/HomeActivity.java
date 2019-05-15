@@ -1,14 +1,10 @@
-package com.boolea.oaxaca.ui;
+package com.boolea.oaxaca.ui.home;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.boolea.oaxaca.R;
-import com.boolea.oaxaca.model.Place;
-import com.boolea.oaxaca.model.Zone;
 import com.boolea.oaxaca.ui.base.BaseActivity;
-import com.boolea.oaxaca.ui.places.PlacesFragment;
-import com.boolea.oaxaca.ui.places.PlacesOptionsFragment;
+import com.boolea.oaxaca.ui.home.PlacesOptionsFragment;
 
 public class HomeActivity extends BaseActivity {
 

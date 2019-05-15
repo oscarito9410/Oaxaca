@@ -14,19 +14,19 @@ h
 [
 +app/src/main/res/layout/fragment_places.xml,d\5\d57a85f9b72c296aa2228b36c8bbd765947550c9
 b
-2app/src/main/java/com/boolea/oaxaca/model/Place.kt,5\1\51075c06ecbfc1b16d5e6d73e68d74aa5605e027
+2app/src/main/java/com/boolea/oaxaca/model/Place.kt,5/1/51075c06ecbfc1b16d5e6d73e68d74aa5605e027
 @
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
 o
-?app/src/main/java/com/boolea/oaxaca/ui/places/PlacesFragment.kt,4\7\47a2d858a0329cf120650381c7810db92336e14b
+?app/src/main/java/com/boolea/oaxaca/ui/places/PlacesFragment.kt,4/7/47a2d858a0329cf120650381c7810db92336e14b
 S
 #app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
 V
 &app/src/main/res/layout/item_place.xml,6\e\6ee0b2816ed8130a3c8ea5a675585eaa5e6b84ec
 j
-:app/src/main/java/com/boolea/oaxaca/manager/DataManager.kt,0\e\0e504127ba9adec38a4c32d0eaab81e55cf76bc0
+:app/src/main/java/com/boolea/oaxaca/manager/DataManager.kt,0/e/0e504127ba9adec38a4c32d0eaab81e55cf76bc0
 m
-=app/src/main/java/com/boolea/oaxaca/ui/places/PlaceAdapter.kt,b\4\b4aba74b4d89d1f3f9292792fb558629cf9a239c
+=app/src/main/java/com/boolea/oaxaca/ui/places/PlaceAdapter.kt,b/4/b4aba74b4d89d1f3f9292792fb558629cf9a239c
 `
 0app/src/main/res/layout/content_place_detail.xml,b\e\be346af7e0a5534af293611ba6a03abc87841088
 R
@@ -34,7 +34,7 @@ R
 a
 1app/src/main/res/layout/fragment_place_detail.xml,a\a\aa4191a90d38651bf5a9e748402cc1c1b737b110
 u
-Eapp/src/main/java/com/boolea/oaxaca/ui/places/PlacesDetailFragment.kt,6\2\62db9eb8241d6e3099bc6220d36074ff467d883d
+Eapp/src/main/java/com/boolea/oaxaca/ui/places/PlacesDetailFragment.kt,6/2/62db9eb8241d6e3099bc6220d36074ff467d883d
 k
 ;app/src/main/java/com/boolea/oaxaca/ui/base/BaseFragment.kt,4\d\4df66a281a3899753c7b9e96989e87d71dab86d2
 R
@@ -48,6 +48,10 @@ Y
 \
 ,app/src/debug/res/values/google_maps_api.xml,c\7\c7ab7bac149c0f83f3f9611a0eb8fdce1aaf3aee
 P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
 h
 8app/src/main/java/com/boolea/oaxaca/ui/MapsActivity.java,f\7\f7d4c0b152761d4d917d3d010e0d8e63c37d03ff
+w
+Gapp/src/main/java/com/boolea/oaxaca/ui/places/PlaceInfoWindowAdapter.kt,3/3/332e7b65f37f878984ac62ed3b048962dee6b9cc
+X
+(gradle/wrapper/gradle-wrapper.properties,f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e

@@ -83,7 +83,7 @@ class PlacesFragment : BaseFragment(), PlaceAdapter.onItemSelectedListener, Snap
     }
 
     override fun onScroll(dx: Int, dy: Int) {
-
+        //On Scroll method
     }
 
     override fun onMapReady(googleMap: GoogleMap?) {
@@ -95,7 +95,7 @@ class PlacesFragment : BaseFragment(), PlaceAdapter.onItemSelectedListener, Snap
         }
         mMap!!.setInfoWindowAdapter(PlaceInfoWindowAdapter(context!!))
         mMap!!.setOnInfoWindowClickListener {
-            val place= it.tag as Place
+            val place = it.tag as Place
             getBaseActivity().pushSingleFragment(PlacesDetailFragment.newInstance(place), PlacesDetailFragment.TAG, true)
 
         }

@@ -1,6 +1,5 @@
 package com.boolea.oaxaca.ui.places
 
-import android.app.PendingIntent.getActivity
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +9,6 @@ import com.google.android.gms.maps.model.Marker
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_window_place.view.*
-import java.lang.Exception
 
 
 /**
