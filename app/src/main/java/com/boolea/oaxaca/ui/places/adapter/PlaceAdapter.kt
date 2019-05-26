@@ -1,4 +1,4 @@
-package com.boolea.oaxaca.ui.places
+package com.boolea.oaxaca.ui.places.adapter
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -17,11 +17,11 @@ operez@na-at.com.mx
 class PlaceAdapter(val ctx: Context, val items: ArrayList<Place>) : RecyclerView.Adapter<PlaceAdapter.ViewHolder>() {
 
 
-    interface onItemSelectedListener {
+    interface OnItemSelectedListener {
         fun onItemSelected(item: Any, position: Int)
     }
 
-    var listener: onItemSelectedListener? = null
+    var listener: OnItemSelectedListener? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(LayoutInflater.from(ctx).inflate(R.layout.item_place, parent, false))
@@ -32,7 +32,7 @@ class PlaceAdapter(val ctx: Context, val items: ArrayList<Place>) : RecyclerView
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        var place = getItem(position)
+        val place = getItem(position)
         holder.title.text = place.name
         Glide.with(ctx).load(place.image).into(holder.ivDescription)
         holder.itemView.setOnClickListener { v ->

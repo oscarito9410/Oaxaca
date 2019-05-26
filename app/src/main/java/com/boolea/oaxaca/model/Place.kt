@@ -8,20 +8,26 @@ import java.io.Serializable
  * Created by Oscar Emilio Pérez Mtz on 25/11/2018.
 operez@na-at.com.mx
  */
-class Place(zone: Zone, name: String, @DrawableRes image: Int, description: String, latLng: LatLng) : Serializable {
+class Place(idPlace: Int, zone: Zone, name: String, gallery: List<Gallery>, description: String, latLng: LatLng) : Serializable {
 
+    var idPlace: Int = 0
     var name: String = ""
     var description: String = ""
     var image: Int = 0
     var zone: Zone? = null
     var latLng: LatLng? = null
+    var gallery: List<Gallery> = emptyList()
+
 
     init {
+        this.idPlace = idPlace
         this.name = name
         this.description = description
         this.image = image
         this.zone = zone
         this.latLng = latLng
+        this.gallery = gallery
+        this.image = gallery.first().image
     }
 
     override fun equals(other: Any?): Boolean {

@@ -1,6 +1,0 @@
-
-ssquid:UselessImportCheck"ERemove this unused import 'android.support.v7.app.AppCompatActivity'.(«Ϋ®ϋόÿÿÿÿ8„Ϋάτ,
-csquid:UselessImportCheck":Remove this unused import 'com.boolea.oaxaca.model.Place'.(Ήμ8άτ,
-usquid:UselessImportCheck"GRemove this unused import 'com.boolea.oaxaca.ui.places.PlacesFragment'.(δ©£™ύÿÿÿÿ8ΡΡ‹‹χ,
-gsquid:UselessImportCheck"9Remove this unused import 'com.boolea.oaxaca.model.Zone'.(ε©ΡΤωÿÿÿÿ8¤“©άτ,
-osquid:MaximumInheritanceDepth"<This class has 9 parents which is greater than 5 authorized.(κ½Òψÿÿÿÿ8ªΑλχ,

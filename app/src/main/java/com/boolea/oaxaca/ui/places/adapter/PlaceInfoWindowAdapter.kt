@@ -1,4 +1,4 @@
-package com.boolea.oaxaca.ui.places
+package com.boolea.oaxaca.ui.places.adapter
 
 import android.content.Context
 import android.view.LayoutInflater

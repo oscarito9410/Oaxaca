@@ -1,15 +1,20 @@
 package com.boolea.oaxaca.ui.places
 
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
 import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.boolea.oaxaca.R
 import com.boolea.oaxaca.model.Comment
+import com.boolea.oaxaca.model.Gallery
 import com.boolea.oaxaca.model.Place
 import com.boolea.oaxaca.ui.base.BaseFragment
+import com.boolea.oaxaca.ui.places.adapter.PlaceCommentAdapter
+import com.boolea.oaxaca.ui.places.adapter.PlaceGalleryAdapter
+import com.boolea.oaxaca.ui.utils.snappyRecyclerView.CenterZoomLayoutManager
+import com.boolea.oaxaca.ui.utils.snappyRecyclerView.CirclePagerIndicatorDecoration
 import com.bumptech.glide.Glide
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.content_place_detail.*
@@ -40,9 +45,11 @@ class PlacesDetailFragment : BaseFragment(), ValueEventListener {
 
     var mComments = emptyList<Comment>().toMutableList()
 
-    lateinit var mCommentAdapter: PlaceCommentAdapter
+    private lateinit var mCommentAdapter: PlaceCommentAdapter
 
-    lateinit var mCommentsReference: DatabaseReference
+    private lateinit var mGalleryAdapter: PlaceGalleryAdapter
+
+    private lateinit var mCommentsReference: DatabaseReference
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -63,15 +70,29 @@ class PlacesDetailFragment : BaseFragment(), ValueEventListener {
     fun setInfoPlace() {
         if (mSelectedPlace != null) {
             mCommentsReference = FirebaseDatabase.getInstance().getReference("comments")
-                    .child(mSelectedPlace!!.hashCode().toString());
+                    .child(mSelectedPlace!!.idPlace.toString())
             mCommentsReference.addValueEventListener(this)
             mCommentAdapter = PlaceCommentAdapter(context!!, mComments)
+
+            mGalleryAdapter = PlaceGalleryAdapter(context!!, mSelectedPlace!!.gallery)
+
+
+            val layoutManager = CenterZoomLayoutManager(context!!, LinearLayoutManager.HORIZONTAL, false)
+
+            rvPlaceGallery.layoutManager = layoutManager
+
+            rvPlaceGallery.addItemDecoration(CirclePagerIndicatorDecoration(ContextCompat.getColor(context!!,
+                    R.color.colorAccent), ContextCompat.getColor(context!!, R.color.colorMorado)))
+
+            rvPlaceGallery.adapter = mGalleryAdapter
+
+
             rvComments.layoutManager = LinearLayoutManager(context)
             rvComments.adapter = mCommentAdapter
-            rvComments.setHasFixedSize(true);
-            rvComments.setNestedScrollingEnabled(true);
+            rvComments.setNestedScrollingEnabled(false);
+
+            tvPlaceName.text = mSelectedPlace!!.name
             tvDescriptionDetail.text = mSelectedPlace!!.description
-            Glide.with(context!!).load(mSelectedPlace!!.image).into(ivPlaceDetail)
             toolbar.title = mSelectedPlace!!.name
             btnSendComment.setOnClickListener({
                 sendComment(mSelectedPlace.hashCode().toString(), etCommentPlace.text.toString(),
@@ -83,10 +104,10 @@ class PlacesDetailFragment : BaseFragment(), ValueEventListener {
 
     fun sendComment(placeId: String, text: String, rating: Long) {
         val comment = Comment(placeId, text, rating)
-        mCommentsReference.child(placeId)
+        mCommentsReference.child(Date().time.toString())
                 .setValue(comment).addOnCompleteListener {
                     if (it.isComplete) {
-                        showToast("Comentario agregado correctamente!")
+                        showToast(getString(R.string.success_comment_added))
                     }
                 }
     }
@@ -96,14 +117,31 @@ class PlacesDetailFragment : BaseFragment(), ValueEventListener {
     }
 
     override fun onDataChange(dataSnap: DataSnapshot) {
+
+        if (dataSnap.children.toList().isEmpty())
+            return
+
+
+        val last = dataSnap.children.last()
+
+        val comments = emptyList<Comment>().toMutableList()
+
         dataSnap.children.forEach {
             if (it != null) {
                 val map = (it.value as HashMap<*, *>)
-                val comment = Comment()
-                comment.text = map["text"] as String?
-                comment.rating = (map["rating"] as Long?)!!
-                mComments.add(comment)
-                mCommentAdapter.notifyDataSetChanged()
+
+                if (map.containsKey("text") && map.containsKey("rating")) {
+                    val comment = Comment()
+                    comment.text = map["text"] as String?
+                    comment.rating = (map["rating"] as Long?)!!
+                    comments.add(comment)
+
+                    if (it.key.equals(last.key)) {
+                        mComments.clear()
+                        mComments.addAll(comments)
+                        mCommentAdapter.notifyDataSetChanged()
+                    }
+                }
             }
         }
     }

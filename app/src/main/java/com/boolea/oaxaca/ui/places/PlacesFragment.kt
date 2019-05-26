@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.boolea.oaxaca.model.Place
 import com.boolea.oaxaca.ui.base.BaseFragment
+import com.boolea.oaxaca.ui.places.adapter.PlaceAdapter
+import com.boolea.oaxaca.ui.places.adapter.PlaceInfoWindowAdapter
 import com.boolea.oaxaca.ui.utils.snappyRecyclerView.CenterZoomLayoutManager
 import com.boolea.oaxaca.ui.utils.snappyRecyclerView.SnappingRecyclerView
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -24,7 +26,7 @@ import java.io.Serializable
  * Created by Oscar Emilio Pérez Mtz on 25/11/2018.
 operez@na-at.com.mx
  */
-class PlacesFragment : BaseFragment(), PlaceAdapter.onItemSelectedListener, SnappingRecyclerView.SnappingRecyclerViewListener, OnMapReadyCallback {
+class PlacesFragment : BaseFragment(), PlaceAdapter.OnItemSelectedListener, SnappingRecyclerView.SnappingRecyclerViewListener, OnMapReadyCallback {
 
     companion object {
         val ARG_LIST_PLACES = "arg_list_place"
@@ -97,7 +99,6 @@ class PlacesFragment : BaseFragment(), PlaceAdapter.onItemSelectedListener, Snap
         mMap!!.setOnInfoWindowClickListener {
             val place = it.tag as Place
             getBaseActivity().pushSingleFragment(PlacesDetailFragment.newInstance(place), PlacesDetailFragment.TAG, true)
-
         }
         mMap!!.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(17.054230, -96.713226), 9f))
     }
