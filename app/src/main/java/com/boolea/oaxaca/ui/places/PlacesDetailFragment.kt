@@ -11,6 +11,7 @@ import com.boolea.oaxaca.model.Comment
 import com.boolea.oaxaca.model.Gallery
 import com.boolea.oaxaca.model.Place
 import com.boolea.oaxaca.ui.base.BaseFragment
+import com.boolea.oaxaca.ui.base.BaseFragmentLocation
 import com.boolea.oaxaca.ui.places.adapter.PlaceCommentAdapter
 import com.boolea.oaxaca.ui.places.adapter.PlaceGalleryAdapter
 import com.boolea.oaxaca.ui.utils.snappyRecyclerView.CenterZoomLayoutManager
@@ -25,7 +26,7 @@ import java.util.*
  * Created by Oscar Emilio Pérez Mtz on 25/11/2018.
 operez@na-at.com.mx
  */
-class PlacesDetailFragment : BaseFragment(), ValueEventListener {
+class PlacesDetailFragment : BaseFragmentLocation(), ValueEventListener {
 
 
     companion object {
@@ -99,10 +100,24 @@ class PlacesDetailFragment : BaseFragment(), ValueEventListener {
                         5)
             })
 
+
+            fab.setOnClickListener({
+                intentShowDirections(mCurrentLocation.latitude.toFloat(),
+                        mCurrentLocation.longitude.toFloat(), mSelectedPlace!!.latLng!!.latitude.toFloat(),
+                        mSelectedPlace!!.latLng!!.longitude.toFloat(),mSelectedPlace!!.name)
+            })
+
         }
     }
 
     fun sendComment(placeId: String, text: String, rating: Long) {
+
+
+        if (text.isEmpty()) {
+            showToast("El comentario no puede estar vacio")
+            return
+        }
+
         val comment = Comment(placeId, text, rating)
         mCommentsReference.child(Date().time.toString())
                 .setValue(comment).addOnCompleteListener {

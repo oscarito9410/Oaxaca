@@ -1,5 +1,7 @@
 package com.boolea.oaxaca.model
 
+import android.os.Parcel
+import android.os.Parcelable
 import android.support.annotation.DrawableRes
 import com.google.android.gms.maps.model.LatLng
 import java.io.Serializable
@@ -15,7 +17,7 @@ class Place(idPlace: Int, zone: Zone, name: String, gallery: List<Gallery>, desc
     var description: String = ""
     var image: Int = 0
     var zone: Zone? = null
-    var latLng: LatLng? = null
+    var latLng: CustomLatLng? = null
     var gallery: List<Gallery> = emptyList()
 
 
@@ -25,7 +27,7 @@ class Place(idPlace: Int, zone: Zone, name: String, gallery: List<Gallery>, desc
         this.description = description
         this.image = image
         this.zone = zone
-        this.latLng = latLng
+        this.latLng = CustomLatLng(latLng.latitude, latLng.longitude)
         this.gallery = gallery
         this.image = gallery.first().image
     }

@@ -72,14 +72,14 @@ class PlacesFragment : BaseFragment(), PlaceAdapter.OnItemSelectedListener, Snap
     override fun onItemSelected(item: Any, position: Int) {
         val place: Place = item as Place
         val location = CameraUpdateFactory.newLatLngZoom(
-                place.latLng, 15f)
+              LatLng(place.latLng!!.latitude,place.latLng!!.longitude), 15f)
         mMap!!.animateCamera(location)
         mMarkes[position].showInfoWindow()
     }
 
     override fun onPositionChange(position: Int) {
         val location = CameraUpdateFactory.newLatLngZoom(
-                mListPlaces!![position].latLng, 15f)
+                LatLng( mListPlaces!![position].latLng!!.latitude, mListPlaces!![position].latLng!!.longitude), 15f)
         mMap!!.animateCamera(location)
         mMarkes[position].showInfoWindow()
     }
@@ -91,7 +91,7 @@ class PlacesFragment : BaseFragment(), PlaceAdapter.OnItemSelectedListener, Snap
     override fun onMapReady(googleMap: GoogleMap?) {
         mMap = googleMap
         mListPlaces!!.forEach {
-            val marker = mMap!!.addMarker(MarkerOptions().position(it.latLng!!).title(it.name))
+            val marker = mMap!!.addMarker(MarkerOptions().position( LatLng(it.latLng!!.latitude,it.latLng!!.longitude)).title(it.name))
             marker.tag = it
             mMarkes.add(marker)
         }
